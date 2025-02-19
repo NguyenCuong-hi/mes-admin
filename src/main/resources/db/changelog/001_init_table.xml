@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <include file="classpath:/db/db.changelog-root.xml" />
+<!--    <changeSet id="20250217223731" author="cuongnv">-->
+<!--        <sqlFile path="db/sql/20250217223731_init_tables.sql"/>-->
+<!--        <sqlFile path="db/sql/20250217224331_insert_values.sql"/>-->
+<!--        &lt;!&ndash;        <sqlFile path="db/sql/20250217224431_insert_authority_values.sql"/>&ndash;&gt;-->
+<!--    </changeSet>-->
+</databaseChangeLog>
