@@ -19,8 +19,11 @@ import java.util.Arrays;
 @ComponentScan(basePackages = {
         // Core
         "com.nvc.core.service",
-        "com.nvc.core.entity", "com.nvc.core.repository",
-        "com.nvc.core.service.impl", "com.nvc.core.rest",
+        "com.nvc.core.config",
+        "com.nvc.core.entity",
+        "com.nvc.core.repository",
+        "com.nvc.core.service.impl",
+        "com.nvc.core.rest",
         "com.example.mesadmin",
         // Security
         "com.nvc.entity.security"})
@@ -37,7 +40,6 @@ public class ConfigLoadingBean extends CachingConfigurerSupport {
     @Bean
     @Override
     public CacheManager cacheManager() {
-        // configure and return an implementation of Spring's CacheManager SPI
         SimpleCacheManager cacheManager = new SimpleCacheManager();
         cacheManager.setCaches(Arrays.asList(new ConcurrentMapCache("default")));
 
